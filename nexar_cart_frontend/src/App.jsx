@@ -16,7 +16,7 @@ function App() {
   const [customArUrl, setCustomArUrl] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5005/api/products')
+    fetch('https://nexar-cart-backend.onrender.com')
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log("API Error:", err));
@@ -29,7 +29,7 @@ function App() {
   const handleAuth = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5005/api/auth', {
+      const response = await fetch('https://nexar-cart-backend.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password, type: isLoginMode ? 'login' : 'register' })
