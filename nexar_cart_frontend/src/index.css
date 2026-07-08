@@ -229,4 +229,11 @@ body {
     align-items: center;
     width: 100%;
   }
+  /* Menu Bar Fix */
+  nav, header, .navbar, .nav-links, .menu {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    padding: 10px !important;
+  }
 }
