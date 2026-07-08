@@ -2,14 +2,12 @@ const express = require('express');
 const cors = require('cors');
 app.use(cors());
 const mongoose = require('mongoose');
-const cors = require('cors');
+
 
 const app = express();
-app.use(cors());
 app.use(express.json());
-
 // MongoDB Connection
-mongoose.connect('mongodb://127.0.0.1:27017/nexar_cart')
+mongoose.connect('mongodb+srv://meghanayeluri0306_db_user:eUBeyxHdMqcUHmTv@cluster0.xnr4ufg.mongodb.net/?appName=Cluster0')
     .then(() => console.log('✅ Local MongoDB connected!'))
     .catch((err) => console.log('⚠️ MongoDB is not installed locally, but API is running perfectly!'));
 
