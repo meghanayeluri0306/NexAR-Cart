@@ -12,9 +12,9 @@ mongoose.connect('mongodb+srv://meghanayeluri0306_db_user:eUBeyxHdMqcUHmTv@clust
     .catch((err) => console.log('⚠️ MongoDB is not installed locally, but API is running perfectly!'));
 
 const productsList = [
-    { id: 1, name: "Premium Smart Watch", price: "₹4,999", image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80", arUrl: "https://modelviewer.dev/shared-assets/models/Astronaut.glb" },
-    { id: 2, name: "Air Sneakers X", price: "₹2,499", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", arUrl: "https://modelviewer.dev/shared-assets/models/shoe.glb" },
-    { id: 3, name: "Gaming Chair", price: "₹12,499", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80", arUrl: "https://modelviewer.dev/shared-assets/models/Astronaut.glb" }
+    { id: 1, name: "Premium Smart Watch", price: "₹4,999", image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80", arUrl: "[https://modelviewer.dev/shared-assets/models/glTF-Sample-Models/2.0/AntiqueCamera/glTF/AntiqueCamera.gltf](https://modelviewer.dev/shared-assets/models/glTF-Sample-Models/2.0/AntiqueCamera/glTF/AntiqueCamera.gltf)"},
+    { id: 2, name: "Air Sneakers X", price: "₹2,499", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", arUrl: "[https://modelviewer.dev/shared-assets/models/Shoe.glb](https://modelviewer.dev/shared-assets/models/Shoe.glb)" },
+    { id: 3, name: "Gaming Chair", price: "₹12,499", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80", arUrl: "[https://modelviewer.dev/shared-assets/models/vintage_chair_2.glb](https://modelviewer.dev/shared-assets/models/vintage_chair_2.glb)" }
 ];
 
 app.get('/api/products', (req, res) => {
