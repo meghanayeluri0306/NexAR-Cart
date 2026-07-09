@@ -4,7 +4,6 @@ import './index.css';
 function App() {
   const [arModel, setArModel] = useState(null);
   const [cartCount, setCartCount] = useState(0);
-  const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState('home'); 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -15,12 +14,11 @@ function App() {
   
   const [customArUrl, setCustomArUrl] = useState('');
 
-  useEffect(() => {
-    fetch('https://nexar-cart-backend.onrender.com/api/products')
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.log("API Error:", err));
-  }, []);
+  const [products, setProducts] = useState([
+      { id: 1, name: "Vintage Camera", price: "₹4,999", image: "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=400&q=80", arUrl: "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AntiqueCamera/glTF-Binary/AntiqueCamera.glb"},
+      { id: 2, name: "Air Sneakers X", price: "₹2,499", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", arUrl: "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Shoe/glTF-Binary/Shoe.glb" },
+      { id: 3, name: "Gaming Chair", price: "₹12,499", image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80", arUrl: "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/SheenChair/glTF-Binary/SheenChair.glb"}
+  ]);
 
   const openAR = (modelUrl) => setArModel(modelUrl);
   const handleAddToCart = () => { setCartCount(cartCount + 1); alert("Product added to your cart!"); };
