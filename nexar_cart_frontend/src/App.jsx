@@ -196,7 +196,7 @@ function App() {
         <div className="ar-modal">
           <div className="ar-modal-content">
             <button className="close-btn" onClick={() => setArModel(null)}>❌ Close</button>
-            <model-viewer src={arModelUrl} ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate style={{ width: '100%', height: '400px', backgroundColor: '#f0f0f0' }}></model-viewer>
+            <model-viewer src={arModel} ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate style={{ width: '100%', height: '400px', backgroundColor: '#f0f0f0' }}></model-viewer>
           </div>
         </div>
       )}
