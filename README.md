@@ -1,25 +1,26 @@
-# NexAR Cart - Augmented Reality Experience
+# NexAR Cart - Full Stack Web Application
 
 ## What the project does
-NexAR Cart is an advanced Augmented Reality (AR) application designed to provide an interactive and immersive virtual viewing experience. Built as a team project, this app bridges the gap between digital content and the real world, allowing users to visualize elements dynamically using their device's camera.
-
-**Key Features of the Project:**
-* **AR Camera View:** Real-time projection of 3D objects onto physical surfaces.
-* **Interactive Placement:** Users can scale, rotate, and move the 3D models dynamically.
-* **Immersive Experience:** Seamless blending of virtual objects with real-world lighting and depth.
+NexAR Cart is a modern, interactive full-stack web application that bridges e-commerce with Augmented Reality (AR) on the web, allowing users to view 3D models directly in their physical space using their device camera. It features a secure user authentication system and seamless data rendering.
 
 ## Tech Stack Used
-* **Framework:** Flutter, Unity (ARCore)
-* **Languages:** Dart, C#
-* **Tools:** Android Studio, VS Code
+* **Frontend:** React.js (Vite), HTML, CSS, JavaScript
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB
+* **Deployment:** Vercel (Frontend) & Render.com (Backend API)
 
-## How to run it
+## Live Demo Links
+* **Frontend Web App:** https://nex-ar-cart.vercel.app/
+* **Backend API:** https://nexar-cart-backend.onrender.com
+
+## How to run it locally
 1. Clone this repository to your local machine:
-   `git clone https://github.com/your-username/nexar-cart.git`
-2. Navigate to the project directory:
-   `cd nexar-cart`
-3. Fetch the required packages:
-   `flutter pub get`
-4. Connect a physical Android/iOS device (AR requires a physical device to test the camera capabilities).
-5. Run the application:
-   `flutter run`
+   `git clone https://github.com/meghanayeluri0306/NexAR-Cart.git`
+2. Open the project in your terminal.
+3. To start the Backend server:
+   `npm install`
+   `npm start`
+4. To start the Frontend application:
+   `cd nexar_cart_frontend`
+   `npm install`
+   `npm run dev`
